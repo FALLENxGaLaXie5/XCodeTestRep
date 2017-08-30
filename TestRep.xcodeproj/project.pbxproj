@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A51164651F573CEE00B79603 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A51164641F573CEE00B79603 /* main.cpp */; };
+		A51164731F573D0200B79603 /* example1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A511646D1F573D0200B79603 /* example1.cpp */; };
+		A51164741F573D0200B79603 /* InitShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A511646F1F573D0200B79603 /* InitShader.cpp */; };
+		A51164761F573D1700B79603 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51164751F573D1700B79603 /* OpenGL.framework */; };
+		A51164781F573D1C00B79603 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51164771F573D1C00B79603 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,16 @@
 
 /* Begin PBXFileReference section */
 		A51164611F573CEE00B79603 /* TestRep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestRep; sourceTree = BUILT_PRODUCTS_DIR; };
-		A51164641F573CEE00B79603 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A511646B1F573D0200B79603 /* Angel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Angel.h; path = ../../ProjST_Source/Angel.h; sourceTree = "<group>"; };
+		A511646C1F573D0200B79603 /* CheckError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckError.h; path = ../../ProjST_Source/CheckError.h; sourceTree = "<group>"; };
+		A511646D1F573D0200B79603 /* example1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = example1.cpp; path = ../../ProjST_Source/example1.cpp; sourceTree = "<group>"; };
+		A511646E1F573D0200B79603 /* fshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fshader21.glsl; path = ../../ProjST_Source/fshader21.glsl; sourceTree = "<group>"; };
+		A511646F1F573D0200B79603 /* InitShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InitShader.cpp; path = ../../ProjST_Source/InitShader.cpp; sourceTree = "<group>"; };
+		A51164701F573D0200B79603 /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mat.h; path = ../../ProjST_Source/mat.h; sourceTree = "<group>"; };
+		A51164711F573D0200B79603 /* vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vec.h; path = ../../ProjST_Source/vec.h; sourceTree = "<group>"; };
+		A51164721F573D0200B79603 /* vshader21.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vshader21.glsl; path = ../../ProjST_Source/vshader21.glsl; sourceTree = "<group>"; };
+		A51164751F573D1700B79603 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A51164771F573D1C00B79603 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51164781F573D1C00B79603 /* GLUT.framework in Frameworks */,
+				A51164761F573D1700B79603 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +55,8 @@
 		A51164581F573CEE00B79603 = {
 			isa = PBXGroup;
 			children = (
+				A51164771F573D1C00B79603 /* GLUT.framework */,
+				A51164751F573D1700B79603 /* OpenGL.framework */,
 				A51164631F573CEE00B79603 /* TestRep */,
 				A51164621F573CEE00B79603 /* Products */,
 			);
@@ -57,7 +73,14 @@
 		A51164631F573CEE00B79603 /* TestRep */ = {
 			isa = PBXGroup;
 			children = (
-				A51164641F573CEE00B79603 /* main.cpp */,
+				A511646B1F573D0200B79603 /* Angel.h */,
+				A511646C1F573D0200B79603 /* CheckError.h */,
+				A511646D1F573D0200B79603 /* example1.cpp */,
+				A511646E1F573D0200B79603 /* fshader21.glsl */,
+				A511646F1F573D0200B79603 /* InitShader.cpp */,
+				A51164701F573D0200B79603 /* mat.h */,
+				A51164711F573D0200B79603 /* vec.h */,
+				A51164721F573D0200B79603 /* vshader21.glsl */,
 			);
 			path = TestRep;
 			sourceTree = "<group>";
@@ -118,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51164651F573CEE00B79603 /* main.cpp in Sources */,
+				A51164741F573D0200B79603 /* InitShader.cpp in Sources */,
+				A51164731F573D0200B79603 /* example1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +176,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
